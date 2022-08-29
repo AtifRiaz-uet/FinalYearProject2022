@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+    <head>
+        <link rel="icon" href="img2.ico">
+        <title>Prolister's</title>
+
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="module" src="{% static 'js/index.js' %}"></script>
+
+        <style>
+            .row{
+                margin-left: 0px;
+                 font-family: "Times New Roman";
+            }
+*{
+             overflow-x: hidden;
+ }
+            strong{
+                color: forestgreen;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:mintcream">
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://localhost:8000/">                Automated Product Listing
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+            <div class="navbar-nav" >
+                <a class="nav-item nav-link active" href="http://localhost:8000/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">About us</a>
+            </div>
+        </div>
+    </nav>
+     <div class="row">
+
+         <div class="col-4">
+     <img src="{{ image }}"  alt="Board Marker" width="500" >
+             <hr> </h5>
+         </div>
+         <div class="col-8 ">
+             <h1 style="color: red"><p >Orange Colour Stationary Pouch</p></h1>
+             <h5 class="description-style"><p ><strong>Brand</strong>	: Dollar </p></h5>
+             <h5 class="description-style"><p ><strong>Ink Color</strong>  :	Red</p></h5>
+             <h5 class="description-style"><p ><strong>Number of Items</strong> : 1</p></h5>
+             <h5 class="description-style"><p ><strong>Color</strong> :	Red</p></h5>
+             <h5 class="description-style"><p ><strong>Product dimensions</strong> : 5.58 x 0.5 x 5 inches</p></h5>
+             <h5 class="description-style"><p ><strong>About this Item</strong> </p></h5>
+             <h5 class="description-style"><li> Bright, vivid, nontoxic ink is quick drying, smear proof, provides consistent color quality</li>
+             <h5 class="description-style"><li>Made in Pakistan</li>
+                 <hr> </h5>
+         </div>
+
+     </div>
+
+{#     <h5><p style="font-family:'Times New Roman'"><tab1><tab1><strong>Product Image</strong> :	</tab1></p></h5>#}
+
+<div class="row" >
+     <h5><p><strong>Description</strong> :</p></h5>
+     <p >Dollar Dry-Erase Pointers deliver strong bold color every time, to ensure that your message is distinct and legible. Clearly display your writing with our patented 3-chamber, liquid ink system. Plus, our see-through ink gauge shows exactly how much ink remains for your use. Simply look at the barrel to determine when it’s time to change your marker. Quickly move from one project to the next with these easy to erase markers. Don’t fuss with caked on ink. The smooth ink easily wipes away, leaving a streak-free, clean surface. You can create either thick or thin lines with the versatile chisel tip. The multipurpose point allows you to customize your written message to fit your needs. Pack contains 4 black markers. Keep your room clean and odor-free. The non-toxic, low odor ink is perfect for any environment, such as classrooms, offices and homes.</p>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white" style="margin-top: 12%">
+
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 The Final Year Project by UETIANS
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    </body>
+</html>
